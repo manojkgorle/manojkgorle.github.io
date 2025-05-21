@@ -12,45 +12,80 @@
 
  <body>
   <div id="preamble">
-   <a href="https://github.com/manojkgorle"><h1 class="title">manojkgorle</h1></a>
+   <img src="portrait.png" alt="Portrait of Manoj K Gorle" style="width:120px; height:120px; border-radius:50%; display:block; margin: 0 auto 20px auto;" />
+   <h1 class="title">ManojKGorle</h1>
 
    <h2 class="subtitle" style="margin-bottom: 35px;">
     contact me via
-    <a href="mailto:manoj@nodekit.xyz">email</a> or view my
+    <a href="mailto:gorlemanojk@gmail.com">email</a> or view my
     <a href="https://github.com/manojkgorle">github</a>
-    &amp; <a href="https://twitter.com/manojkgorle">twitter</a>
+    , <a href="https://twitter.com/manojkgorle">twitter</a>
+    &amp; <a href="https://www.linkedin.com/in/manojkgorle/">linkedin</a>
    </h2>
   </div>
   <div>
-    <p style="margin-bottom: 40px; text-align: center;">undergrad at <a href="https://home.iitd.ac.in">IIT Delhi</a> &amp; developer at <a href="https://nodekit.xyz">nodekit</a></p>
-
+    <div> 
+      <h2>About me</h2>
+      <p>
+        I am a researcher and developer with a focus on high throughput blockchain execution environments, consensus protocols, zero knowledge proofs, rollup settlement, multi rollup mev, synchronous atomic composability, layer 2 scaling, data availability, fee mechanisms, restaking and cryptoeconomics. 
+        <br>
+        <br>
+        I am currently in my final year of my Bachelors at <a href="https://home.iitd.ac.in" >I.I.T Delhi </a>. I am the vice president of the <a href="https://blocsoc.in/"> Blockchain Society at I.I.T Delhi</a>.
+        <br>
+        <br>
+        I am working as a engineer at Nodekit, a company building superbuilders and decentralised shared sequencers.
+      </p>
+    </div>
    <div>
-    <h2>I am interested on</h2>
-    <div>
-      <ul>
-        <li>Zero Knowledge &amp; Provable Computation</li>
-        <li>Distributed Systems</li>
-        <li>Game theory</li>
-        <li>Space and Time Complexity</li>
-        <li>Nano materials</li>
-      </ul>
-    </div>
-    <div>
-      <h2>Writings</h2>
-      <div>
-        <ul>
-          <li><a href="https://hackmd.io/@manojkgorle/quark-layer">Unveiling Quark Layer</a>: Exploring possiblities of a cryptoeconomic proof aggregation layer.</li>
-        </ul>
-      </div>
-    </div>
     <h2>Projects</h2>
     <div>
      <ul>
-      <li><a href="https://github.com/sausaging">Quark Layer</a>: Decentralised proof verification and aggregation layer.</li>
-      <li><a href="https://github.com/manojkgorle/hypersdk/tree/main/examples/tokenvm">Hyperwasm</a>: Wasm runtime on hypersdk.</li>
-      <li><a href="https://github.com/manojkgorle/hypersdk/tree/snac/examples/morpheusvm">Snacs</a>: Snark Accounts for hyperchains using hypersdk.</li>
-      <li><a href="https://github.com/manojkgorle/precompile-evm-extended">Ende</a>: Precompile EVM extended</li>
+      <li><a href="https://github.com/manojkgorle/brainfuckvm/">Ooty VM</a>: Proving computational integrity of Brainfuck Isa using F.R.I and Starks. Identified bottlenecks caused in proof generation by profiling using valgrind and implemented optimised methods for faster proof generation, alongside implementing cryptographic primitives.</li>
+      <li><a href="https://github.com/sausaging">Quark Layer</a>: A decentralised proof verification and aggregation layer. Faster proof verification guarantees using cryptoeconomic security of restaked validators, called soft guarantee. A hard but slow proof verification guarantee using cryptographic security of zkvms. Using aggregation to multi prove verifications and reduce on-chain verification costs. Reducing cost and latency by orders for proof verification(s).</li>
+      <li><a href="https://github.com/manojkgorle/escobar/">Escobar</a>: A avalanche subnet with solana virtual machine as its execution environment. Avalanche provides snowman consensus engine that can be plugged in with any logic for execution. Agave client of solana provides a sandboxed environment to execute transactions and track state changes made by the txs. Plugging in sandboxed svm with snowman consensus engine and building the state model resulted in a functional svm subnet.</li>
+      <li><a href="https://github.com/manojkgorle/hypersdk/tree/main/examples/tokenvm">Hyperwasm</a>: WASM runtime in hypersdk. Execute smart contracts written in programming languages(Rust, TinyGo, Typescript, C++ ...) that can be compiled into wasm. Built transaction execution pipeline and Rust SDK to write smart contracts.</li>
+      <li><a href="https://github.com/manojkgorle/hypersdk/tree/snac/examples/morpheusvm">Snacs</a>: Snark accounts for hyperchains using hypersdk. HyperSdk provides a flexible interface to define new auth types. Snark accounts lets to control a user account similar to using signature schemes like BLS and Ed25519 using ZK proof verifications. A snark will have a proving and verifying key, with proving key acting similar to private key and verifying key acting similar to public key. A proof is generated for Mimc hashing of sha224 hash of tx.digest(). This proof acts as signature.</li>
+      <li><a href="https://github.com/manojkgorle/kasavinal">Kasavinal DA</a>: Implemented an probabilistic data availability layer with 1.5MiB/sec throughput and 2 second finality using hypersdk. Data availability is very crucial for optimistic rollups for playing fraud proof games.</li>
+      <li><a href="https://github.com/manojkgorle/stark101-rs">Stark101-rs</a>: Rust implementation of Stark101 by starkware. </li>
+      <li><a href="https://github.com/manojkgorle/onchainchess">Onchain Chess</a>: 8-by-8 onchain chess implementation using Solidity. Implemented gas optimisations for computing valid moves based on boundary conditions.</li>
+      <li><a href="https://github.com/manojkgorle/account-abstraction-sdk">Account Abstraction SDK</a>: SDK to create and maintain smart accounts based on ERC4337.</li>
+      <li><a href="https://github.com/manojkgorle/precompile-evm-extended">Ende</a>: Extended precompile EVM with new precompiles for Ed25519 signature verification, mapping, RandUint256 generation(native oracle for random numbers).</li>
      </ul>
+    </div>
+    <h2>Writings</h2>
+    <div>
+      <ul>
+        <li><a href="https://hackmd.io/@manojkgorle/quark-layer">Unveiling Quark Layer</a>: Exploring possibilities of a cryptoeconomic proof verification and aggregation layer.</li>
+        <li><a href="https://hackmd.io/@manojkgorle/ryMyE4Hxkl">Farcaster v/s Lens deep dive</a>: An exploratory article comparing lens protocol and farcaster from a venture capital perspective, more biased research towards farcaster.</li>
+      </ul>
+    </div>
+    <h2>Academical Excellence</h2>
+    <div>
+      <ul>
+        <li>Achieved 98.8 percentile in JEE Mains 2022.</li>
+        <li>In Person Attendee of India's Prime minister Mr. Narendra Modi's <i>Pareksha Pe Charcha 2020</i></li>
+        <li>Silver medal at Global Young Scientists Challenge 2018 and National level participant for National children's science congress 2017 for the project <i>Mapping of traditional medicinal plants of phool bagh hills, vizianagaram.</i></li>
+        <li>Gold medal at IMO and ISO at high school level.</li>
+      </ul>
+    </div>
+    <h2>Currently, I am interested on</h2>
+    <div>
+      <ul>
+        <li>Mechanistic interpretability of Large Language Models.</li>
+        <li>Zero Knowledge & Verifiable Compute.</li>
+        <li>Client side proving and Privacy</li>
+        <li>Hardware acceleration for ZKVMs and LLMs.</li>
+        <li>Ceramics and Semiconductors.</li>
+        <li>Quantum computing</li>
+        <li>Humanoid robotics</li>
+        <li>Venture capital and private equity.</li>
+        <li>Gene editing</li>
+        <li>Game theory</li>
+        <li>Operating Systems</li>
+        <li>Derivatives</li>
+      </ul>
+    </div>
+    <div>
     </div>
    </div>
   </div>
