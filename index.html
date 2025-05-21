@@ -27,7 +27,7 @@
     <div> 
       <h2>About me</h2>
       <p>
-        I am a researcher and developer with a focus on high throughput blockchain execution environments, consensus protocols, zero knowledge proofs, rollup settlement, multi rollup mev, synchronous atomic composability, layer 2 scaling, data availability, fee mechanisms, restaking and cryptoeconomics. 
+        I am a researcher and developer with a focus on high throughput blockchain execution environments, consensus protocols, zero knowledge proofs, rollup settlement, multi rollup MEV, atomic synchronous composability, layer 2 scaling, data availability, fee mechanisms, restaking and cryptoeconomics. 
         <br>
         <br>
         I am currently in my final year of my Bachelors at <a href="https://home.iitd.ac.in" >I.I.T Delhi </a>. I am the vice president of the <a href="https://blocsoc.in/"> Blockchain Society at I.I.T Delhi</a>.
@@ -40,12 +40,12 @@
     <h2>Projects</h2>
     <div>
      <ul>
-      <li><a href="https://github.com/manojkgorle/brainfuckvm/">Ooty VM</a>: Proving computational integrity of Brainfuck Isa using F.R.I and Starks. Identified bottlenecks caused in proof generation by profiling using valgrind and implemented optimised methods for faster proof generation, alongside implementing cryptographic primitives.</li>
+      <li><a href="https://github.com/manojkgorle/brainfuckvm/">Ooty VM</a>: Proving computational integrity of Brainfuck Isa using F.R.I and STARKs. Identified bottlenecks caused in proof generation by profiling using valgrind and implemented optimised methods for faster proof generation, alongside implementing cryptographic primitives.</li>
       <li><a href="https://github.com/sausaging">Quark Layer</a>: A decentralised proof verification and aggregation layer. Faster proof verification guarantees using cryptoeconomic security of restaked validators, called soft guarantee. A hard but slow proof verification guarantee using cryptographic security of zkvms. Using aggregation to multi prove verifications and reduce on-chain verification costs. Reducing cost and latency by orders for proof verification(s).</li>
-      <li><a href="https://github.com/manojkgorle/escobar/">Escobar</a>: A avalanche subnet with solana virtual machine as its execution environment. Avalanche provides snowman consensus engine that can be plugged in with any logic for execution. Agave client of solana provides a sandboxed environment to execute transactions and track state changes made by the txs. Plugging in sandboxed svm with snowman consensus engine and building the state model resulted in a functional svm subnet.</li>
-      <li><a href="https://github.com/manojkgorle/hypersdk/tree/main/examples/tokenvm">Hyperwasm</a>: WASM runtime in hypersdk. Execute smart contracts written in programming languages(Rust, TinyGo, Typescript, C++ ...) that can be compiled into wasm. Built transaction execution pipeline and Rust SDK to write smart contracts.</li>
-      <li><a href="https://github.com/manojkgorle/hypersdk/tree/snac/examples/morpheusvm">Snacs</a>: Snark accounts for hyperchains using hypersdk. HyperSdk provides a flexible interface to define new auth types. Snark accounts lets to control a user account similar to using signature schemes like BLS and Ed25519 using ZK proof verifications. A snark will have a proving and verifying key, with proving key acting similar to private key and verifying key acting similar to public key. A proof is generated for Mimc hashing of sha224 hash of tx.digest(). This proof acts as signature.</li>
-      <li><a href="https://github.com/manojkgorle/kasavinal">Kasavinal DA</a>: Implemented an probabilistic data availability layer with 1.5MiB/sec throughput and 2 second finality using hypersdk. Data availability is very crucial for optimistic rollups for playing fraud proof games.</li>
+      <li><a href="https://github.com/manojkgorle/escobar/">Escobar</a>: An Avalanche subnet with solana virtual machine as its execution environment. Avalanche provides snowman consensus engine that can be plugged in with any logic for execution. Agave client of solana provides a sandboxed environment to execute transactions and track state changes made by the txs. Plugging in sandboxed svm with snowman consensus engine and building the state model resulted in a functional svm subnet.</li>
+      <li><a href="https://github.com/manojkgorle/HyperSDK/tree/main/examples/tokenvm">Hyperwasm</a>: WASM runtime in HyperSDK. Execute smart contracts written in programming languages(Rust, TinyGo, Typescript, C++ ...) that can be compiled into WASM. Built transaction execution pipeline and Rust SDK to write smart contracts.</li>
+      <li><a href="https://github.com/manojkgorle/HyperSDK/tree/snac/examples/morpheusvm">Snacs</a>: SNARK accounts for hyperchains using HyperSDK. HyperSDK provides a flexible interface to define new auth types. Snark accounts lets to control a user account similar to using signature schemes like BLS and Ed25519 using ZK proof verifications. A snark will have a proving and verifying key, with proving key acting similar to private key and verifying key acting similar to public key. A proof is generated for Mimc hashing of SHA224 hash of tx.digest(). This proof acts as signature.</li>
+      <li><a href="https://github.com/manojkgorle/kasavinal">Kasavinal DA</a>: Implemented a probabilistic data availability layer with 1.5MiB/sec throughput and 2 second finality using HyperSDK. Data availability is very crucial for optimistic rollups for playing fraud proof games.</li>
       <li><a href="https://github.com/manojkgorle/stark101-rs">Stark101-rs</a>: Rust implementation of Stark101 by starkware. </li>
       <li><a href="https://github.com/manojkgorle/onchainchess">Onchain Chess</a>: 8-by-8 onchain chess implementation using Solidity. Implemented gas optimisations for computing valid moves based on boundary conditions.</li>
       <li><a href="https://github.com/manojkgorle/account-abstraction-sdk">Account Abstraction SDK</a>: SDK to create and maintain smart accounts based on ERC4337.</li>
@@ -56,7 +56,7 @@
     <div>
       <ul>
         <li><a href="https://hackmd.io/@manojkgorle/quark-layer">Unveiling Quark Layer</a>: Exploring possibilities of a cryptoeconomic proof verification and aggregation layer.</li>
-        <li><a href="https://hackmd.io/@manojkgorle/ryMyE4Hxkl">Farcaster v/s Lens deep dive</a>: An exploratory article comparing lens protocol and farcaster from a venture capital perspective, more biased research towards farcaster.</li>
+        <li><a href="https://hackmd.io/@manojkgorle/ryMyE4Hxkl">Farcaster v/s Lens deep dive</a>: An exploratory article comparing Lens Protocol and Farcaster from a venture capital perspective, more biased research towards farcaster.</li>
       </ul>
     </div>
     <h2>Academical Excellence</h2>
@@ -64,7 +64,7 @@
       <ul>
         <li>Achieved 98.8 percentile in JEE Mains 2022.</li>
         <li>In Person Attendee of India's Prime minister Mr. Narendra Modi's <i>Pareksha Pe Charcha 2020</i></li>
-        <li>Silver medal at Global Young Scientists Challenge 2018 and National level participant for National children's science congress 2017 for the project <i>Mapping of traditional medicinal plants of phool bagh hills, vizianagaram.</i></li>
+        <li>Silver medal at Global Young Scientists Challenge 2018 and National level participant for National Children's Science Congress 2017 for the project <i>Mapping of traditional medicinal plants of phool bagh hills, vizianagaram.</i></li>
         <li>Gold medal at IMO and ISO at high school level.</li>
       </ul>
     </div>
@@ -73,16 +73,16 @@
       <ul>
         <li>Mechanistic interpretability of Large Language Models.</li>
         <li>Zero Knowledge & Verifiable Compute.</li>
-        <li>Client side proving and Privacy</li>
-        <li>Hardware acceleration for ZKVMs and LLMs.</li>
+        <li>Client side proving and Privacy.</li>
+        <li>Hardware acceleration for ZK VMs and LLMs.</li>
         <li>Ceramics and Semiconductors.</li>
-        <li>Quantum computing</li>
-        <li>Humanoid robotics</li>
+        <li>Quantum computing.</li>
+        <li>Humanoid robotics.</li>
         <li>Venture capital and private equity.</li>
-        <li>Gene editing</li>
-        <li>Game theory</li>
-        <li>Operating Systems</li>
-        <li>Derivatives</li>
+        <li>Gene editing.</li>
+        <li>Game theor.</li>
+        <li>Operating Systems.</li>
+        <li>Derivatives.</li>
       </ul>
     </div>
     <div>
