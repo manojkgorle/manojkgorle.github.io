@@ -1,122 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="the personal website of manojkgorle" />
 
-  <title>manojkgorle</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="the personal website of manojkgorle" />
+    <title>manojkgorle</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <link rel="stylesheet" href="styles.css" />
- </head>
+<body>
+    <div id="preamble">
+        <div id="theme-toggle" class="theme-toggle" title="Toggle light/dark mode">
+            <span id="theme-icon">🌙</span>
+        </div>
+        <img src="portrait.png" alt="Portrait of Manoj K Gorle" style="width:120px; height:120px; border-radius:50%; display:block; margin: 0 auto 20px auto;" />
+        <h1 class="title">ManojKGorle</h1>
 
- <body>
-  <div id="preamble">
-   <img src="portrait.png" alt="Portrait of Manoj K Gorle" style="width:120px; height:120px; border-radius:50%; display:block; margin: 0 auto 20px auto;" />
-   <h1 class="title">ManojKGorle</h1>
+        <h2 class="subtitle" style="margin-bottom: 35px;">
+            contact me via
+            <a href="mailto:gorlemanojk@gmail.com">email</a> or view my
+            <a href="https://github.com/manojkgorle">github</a> , <a href="https://twitter.com/manojkgorle">twitter</a> &amp; <a href="https://www.linkedin.com/in/manojkgorle/">linkedin</a>
+        </h2>
+    </div>
+    <div>
+        <div>
+            <h2>About me</h2>
+            <p>
+                I am a researcher and developer with a focus on high throughput blockchain execution environments, consensus protocols, zero knowledge proofs, rollup settlement, multi rollup MEV, atomic synchronous composability, layer 2 scaling, data availability, fee
+                mechanisms, cross-chain settlements, preconfirmations, interoperability, restaking, CPAMMs and cryptoeconomics.
+                <br><br> I am currently in my final year of my Bachelors at <a href="https://home.iitd.ac.in">I.I.T Delhi </a>. I am the vice president of the <a href="https://blocsoc.in/"> Blockchain Society at I.I.T Delhi</a>.
+                <br><br> I am working as a engineer at Nodekit, a company building superbuilders and decentralised shared sequencers.
+            </p>
+        </div>
+        <div>
+            <h2>Projects</h2>
+            <div>
+                <ul>
+                    <li><a href="https://github.com/manojkgorle/brainfuckvm/">Ooty VM</a>: Proving computational integrity of Brainfuck Isa using F.R.I and STARKs. Identified bottlenecks caused in proof generation by profiling using valgrind and implemented
+                        optimised methods for faster proof generation, alongside implementing cryptographic primitives.</li>
+                    <li><a href="https://github.com/sausaging">Quark Layer</a>: A decentralised proof verification and aggregation layer. Faster proof verification guarantees using cryptoeconomic security of restaked validators, called soft guarantee. A hard
+                        but slow proof verification guarantee using cryptographic security of zkvms. Using aggregation to multi prove verifications and reduce on-chain verification costs. Reducing cost and latency by orders for proof verification(s).</li>
+                    <li><a href="https://github.com/manojkgorle/escobar/">Escobar</a>: An Avalanche subnet with solana virtual machine as its execution environment. Avalanche provides snowman consensus engine that can be plugged in with any logic for execution.
+                        Agave client of solana provides a sandboxed environment to execute transactions and track state changes made by the txs. Plugging in sandboxed svm with snowman consensus engine and building the state model resulted in a functional
+                        svm subnet.</li>
+                    <li><a href="https://github.com/manojkgorle/HyperSDK/tree/main/examples/tokenvm">Hyperwasm</a>: WASM runtime in HyperSDK. Execute smart contracts written in programming languages(Rust, TinyGo, Typescript, C++ ...) that can be compiled
+                        into WASM. Built transaction execution pipeline and Rust SDK to write smart contracts.</li>
+                    <li><a href="https://github.com/manojkgorle/HyperSDK/tree/snac/examples/morpheusvm">Snacs</a>: SNARK accounts for hyperchains using HyperSDK. HyperSDK provides a flexible interface to define new auth types. Snark accounts lets to control
+                        a user account similar to using signature schemes like BLS and Ed25519 using ZK proof verifications. A snark will have a proving and verifying key, with proving key acting similar to private key and verifying key acting similar
+                        to public key. A proof is generated for Mimc hashing of SHA224 hash of tx.digest(). This proof acts as signature.</li>
+                    <li><a href="https://github.com/manojkgorle/kasavinal">Kasavinal DA</a>: Implemented a probabilistic data availability layer with 1.5MiB/sec throughput and 2 second finality using HyperSDK. Data availability is very crucial for optimistic
+                        rollups for playing fraud proof games.</li>
+                    <li><a href="https://github.com/manojkgorle/stark101-rs">Stark101-rs</a>: Rust implementation of Stark101 by starkware. </li>
+                    <li><a href="https://github.com/manojkgorle/onchainchess">Onchain Chess</a>: 8-by-8 onchain chess implementation using Solidity. Implemented gas optimisations for computing valid moves based on boundary conditions.</li>
+                    <li><a href="https://github.com/manojkgorle/account-abstraction-sdk">Account Abstraction SDK</a>: SDK to create and maintain smart accounts based on ERC4337.</li>
+                    <li><a href="https://github.com/manojkgorle/precompile-evm-extended">Ende</a>: Extended precompile EVM with new precompiles for Ed25519 signature verification, mapping, RandUint256 generation(native oracle for random numbers).</li>
+                </ul>
+            </div>
+            <h2>Writings</h2>
+            <div>
+                <ul>
+                    <li><a href="https://hackmd.io/@manojkgorle/quark-layer">Unveiling Quark Layer</a>: Exploring possibilities of a cryptoeconomic proof verification and aggregation layer.</li>
+                    <li><a href="https://hackmd.io/@manojkgorle/ryMyE4Hxkl">Farcaster v/s Lens deep dive</a>: An exploratory article comparing Lens Protocol and Farcaster from a venture capital perspective, more biased research towards farcaster.</li>
+                </ul>
+            </div>
+            <h2>Tweets</h2>
+            <div>
+                <ul>
+                    <li>Subnet with SVM execution environment. <a href="https://x.com/ManojKGorle/status/1830283313334112576">link</a></li>
+                    <li>Introducing HyperWASM. <a href="https://x.com/ManojKGorle/status/1731739139106906355">link</a></li>
+                    <li>Announcement of internally acheiving proof verification layer. <a href="https://x.com/ManojKGorle/status/1766980404907573507">link</a></li>
+                </ul>
+            </div>
+            <h2>Academical Excellence</h2>
+            <div>
+                <ul>
+                    <li>Achieved 98.8 percentile in JEE Mains 2022.</li>
+                    <li>In Person Attendee of India's Prime minister Mr. Narendra Modi's <i>Pareksha Pe Charcha 2020</i></li>
+                    <li>Silver medal at Global Young Scientists Challenge 2018 and National level participant for National Children's Science Congress 2017 for the project <i>Mapping of traditional medicinal plants of phool bagh hills, vizianagaram.</i></li>
+                    <li>Gold medal at IMO and ISO at high school level.</li>
+                </ul>
+            </div>
+            <h2>Currently, I am interested on</h2>
+            <div>
+                <ul>
+                    <li>Mechanistic interpretability of Large Language Models.</li>
+                    <li>Zero Knowledge & Verifiable Compute.</li>
+                    <li>Client side proving and Privacy.</li>
+                    <li>Hardware acceleration for ZK VMs and LLMs.</li>
+                    <li>Ceramics and Semiconductors.</li>
+                    <li>Quantum computing.</li>
+                    <li>Humanoid robotics.</li>
+                    <li>Venture capital and private equity.</li>
+                    <li>Gene editing.</li>
+                    <li>Game theor.</li>
+                    <li>Operating Systems.</li>
+                    <li>Derivatives.</li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
 
-   <h2 class="subtitle" style="margin-bottom: 35px;">
-    contact me via
-    <a href="mailto:gorlemanojk@gmail.com">email</a> or view my
-    <a href="https://github.com/manojkgorle">github</a>
-    , <a href="https://twitter.com/manojkgorle">twitter</a>
-    &amp; <a href="https://www.linkedin.com/in/manojkgorle/">linkedin</a>
-   </h2>
-  </div>
-  <div>
-    <div> 
-      <h2>About me</h2>
-      <p>
-        I am a researcher and developer with a focus on high throughput blockchain execution environments, consensus protocols, zero knowledge proofs, rollup settlement, multi rollup MEV, atomic synchronous composability, layer 2 scaling, data availability, fee mechanisms, preconfirmations, restaking and cryptoeconomics. 
-        <br>
-        <br>
-        I am currently in my final year of my Bachelors at <a href="https://home.iitd.ac.in" >I.I.T Delhi </a>. I am the vice president of the <a href="https://blocsoc.in/"> Blockchain Society at I.I.T Delhi</a>.
-        <br>
-        <br>
-        I am working as a engineer at Nodekit, a company building superbuilders and decentralised shared sequencers.
-      </p>
-    </div>
-   <div>
-    <h2>Projects</h2>
-    <div>
-     <ul>
-      <li><a href="https://github.com/manojkgorle/brainfuckvm/">Ooty VM</a>: Proving computational integrity of Brainfuck Isa using F.R.I and STARKs. Identified bottlenecks caused in proof generation by profiling using valgrind and implemented optimised methods for faster proof generation, alongside implementing cryptographic primitives.</li>
-      <li><a href="https://github.com/sausaging">Quark Layer</a>: A decentralised proof verification and aggregation layer. Faster proof verification guarantees using cryptoeconomic security of restaked validators, called soft guarantee. A hard but slow proof verification guarantee using cryptographic security of zkvms. Using aggregation to multi prove verifications and reduce on-chain verification costs. Reducing cost and latency by orders for proof verification(s).</li>
-      <li><a href="https://github.com/manojkgorle/escobar/">Escobar</a>: An Avalanche subnet with solana virtual machine as its execution environment. Avalanche provides snowman consensus engine that can be plugged in with any logic for execution. Agave client of solana provides a sandboxed environment to execute transactions and track state changes made by the txs. Plugging in sandboxed svm with snowman consensus engine and building the state model resulted in a functional svm subnet.</li>
-      <li><a href="https://github.com/manojkgorle/HyperSDK/tree/main/examples/tokenvm">Hyperwasm</a>: WASM runtime in HyperSDK. Execute smart contracts written in programming languages(Rust, TinyGo, Typescript, C++ ...) that can be compiled into WASM. Built transaction execution pipeline and Rust SDK to write smart contracts.</li>
-      <li><a href="https://github.com/manojkgorle/HyperSDK/tree/snac/examples/morpheusvm">Snacs</a>: SNARK accounts for hyperchains using HyperSDK. HyperSDK provides a flexible interface to define new auth types. Snark accounts lets to control a user account similar to using signature schemes like BLS and Ed25519 using ZK proof verifications. A snark will have a proving and verifying key, with proving key acting similar to private key and verifying key acting similar to public key. A proof is generated for Mimc hashing of SHA224 hash of tx.digest(). This proof acts as signature.</li>
-      <li><a href="https://github.com/manojkgorle/kasavinal">Kasavinal DA</a>: Implemented a probabilistic data availability layer with 1.5MiB/sec throughput and 2 second finality using HyperSDK. Data availability is very crucial for optimistic rollups for playing fraud proof games.</li>
-      <li><a href="https://github.com/manojkgorle/stark101-rs">Stark101-rs</a>: Rust implementation of Stark101 by starkware. </li>
-      <li><a href="https://github.com/manojkgorle/onchainchess">Onchain Chess</a>: 8-by-8 onchain chess implementation using Solidity. Implemented gas optimisations for computing valid moves based on boundary conditions.</li>
-      <li><a href="https://github.com/manojkgorle/account-abstraction-sdk">Account Abstraction SDK</a>: SDK to create and maintain smart accounts based on ERC4337.</li>
-      <li><a href="https://github.com/manojkgorle/precompile-evm-extended">Ende</a>: Extended precompile EVM with new precompiles for Ed25519 signature verification, mapping, RandUint256 generation(native oracle for random numbers).</li>
-     </ul>
-    </div>
-    <h2>Writings</h2>
-    <div>
-      <ul>
-        <li><a href="https://hackmd.io/@manojkgorle/quark-layer">Unveiling Quark Layer</a>: Exploring possibilities of a cryptoeconomic proof verification and aggregation layer.</li>
-        <li><a href="https://hackmd.io/@manojkgorle/ryMyE4Hxkl">Farcaster v/s Lens deep dive</a>: An exploratory article comparing Lens Protocol and Farcaster from a venture capital perspective, more biased research towards farcaster.</li>
-      </ul>
-    </div>
-    <h2>Tweets</h2>
-    <div>
-      <ul>
-        <li>Subnet with SVM execution environment. <a href="https://x.com/ManojKGorle/status/1830283313334112576">link</a></li>
-        <li>Introducing HyperWASM. <a href="https://x.com/ManojKGorle/status/1731739139106906355">link</a></li>
-        <li>Announcement of internally acheiving proof verification layer. <a href="https://x.com/ManojKGorle/status/1766980404907573507">link</a></li>
-      </ul>
-    </div>
-    <h2>Academical Excellence</h2>
-    <div>
-      <ul>
-        <li>Achieved 98.8 percentile in JEE Mains 2022.</li>
-        <li>In Person Attendee of India's Prime minister Mr. Narendra Modi's <i>Pareksha Pe Charcha 2020</i></li>
-        <li>Silver medal at Global Young Scientists Challenge 2018 and National level participant for National Children's Science Congress 2017 for the project <i>Mapping of traditional medicinal plants of phool bagh hills, vizianagaram.</i></li>
-        <li>Gold medal at IMO and ISO at high school level.</li>
-      </ul>
-    </div>
-    <h2>Currently, I am interested on</h2>
-    <div>
-      <ul>
-        <li>Mechanistic interpretability of Large Language Models.</li>
-        <li>Zero Knowledge & Verifiable Compute.</li>
-        <li>Client side proving and Privacy.</li>
-        <li>Hardware acceleration for ZK VMs and LLMs.</li>
-        <li>Ceramics and Semiconductors.</li>
-        <li>Quantum computing.</li>
-        <li>Humanoid robotics.</li>
-        <li>Venture capital and private equity.</li>
-        <li>Gene editing.</li>
-        <li>Game theor.</li>
-        <li>Operating Systems.</li>
-        <li>Derivatives.</li>
-      </ul>
-    </div>
-    <div>
-    </div>
-   </div>
-  </div>
-  <div id="theme" class="dark">
-    switch to light theme
-  </div>
-  <script>
-    const theme = document.querySelector('#theme');
-    theme.addEventListener('click', () => {
-     if (document.body.classList.contains('light')) {
-      document.body.classList.remove('light');
-      document.body.classList.add('dark');
-      document.getElementById("theme").innerHTML = 'switch to light theme';
-      document.body.style.backgroundColor = "black";
-      document.body.style.color = "white";
-     } else {
-      document.body.classList.remove('dark');
-      document.body.classList.add('light');
-      document.getElementById("theme").innerHTML = 'switch to dark theme';
-      document.body.style.backgroundColor = "white";
-      document.body.style.color = "black";
-     }
-    });
-  </script>
- </body>
+        function setTheme(mode) {
+            if (mode === 'light') {
+                document.body.classList.remove('dark');
+                document.body.classList.add('light');
+                themeToggle.classList.add('light');
+                themeIcon.textContent = '☀️';
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            } else {
+                document.body.classList.remove('light');
+                document.body.classList.add('dark');
+                themeToggle.classList.remove('light');
+                themeIcon.textContent = '🌙';
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+        }
+
+        // Detect user's device preference for color scheme
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setTheme(prefersDark ? 'dark' : 'light');
+
+        themeToggle.addEventListener('click', () => {
+            if (document.body.classList.contains('light')) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        });
+    </script>
+</body>
+
 </html>
